@@ -738,9 +738,6 @@ footer .footer-title {
   color: #0b41cd;
   margin-inline-end: 10px;
 }
-.contact-data li html[dir=ltr] .icon.fa-phone {
-  transform: scaleX(-1);
-}
 .contact-data li a {
   font-size: 16px;
   color: #052066;
@@ -751,6 +748,10 @@ footer .footer-title {
 }
 .contact-data li:last-of-type {
   margin-bottom: 0;
+}
+
+html[dir=ltr] .contact-data li .icon.fa-phone {
+  transform: scaleX(-1);
 }
 
 .newsletter {
