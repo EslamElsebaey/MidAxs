@@ -110,12 +110,12 @@ body{
 @include max-768 {
     .radial-gradient{
         background-image : radial-gradient(circle at center, #e1e7f9 0%, #ffffff 70%);
-        width: 500px;
+        width: 100%;
         height: 500px;
         border-radius: 50%;
         z-index: -1;
-        top: 80px;
-        inset-inline-end: -22%;
+        top: 55px;
+        inset-inline-end: -15%;
     }
     .general-imgHolder{
         width: 100%;
