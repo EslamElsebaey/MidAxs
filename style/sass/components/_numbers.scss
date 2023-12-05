@@ -1,0 +1,83 @@
+.numbers{
+    padding-top: 140px;
+    padding-bottom: 115px;
+}
+.nums-content{
+    .title{
+        font-size: 48px;
+        line-height: 50px;
+        color: #052066;
+        text-align: center;
+        text-align: center;
+        margin-bottom: 65px;
+    }
+}
+.counter-content{
+    width: 490px;
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    grid-template-columns: repeat(2 , 1fr);
+    gap:  65px 150px;
+}
+.num-holder{
+    font-size: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 36px;
+    color: #0b41cd;
+    font-weight: 300;
+    margin-bottom: 25px;
+    .num {
+    font-size: 48px;
+    margin: 0;
+    }
+}
+.counter-item{
+    .text{
+        font-size: 20px;
+        color: #052066;
+        display: block;
+        text-align: center;
+        white-space: nowrap;
+    }
+}
+
+
+@include max-768 {
+    .nums-content .title{
+        font-size: 30px;
+        line-height: 1.5;
+        margin-bottom: 30px;
+    }
+    .counter-content{
+        width: 100%;
+        gap: unset;
+        // gap: 50px;
+        // margin-left: unset;
+        // margin-right: unset;
+        display: flex;
+        flex-wrap: wrap;
+        row-gap: 40px;
+    }
+    .counter-item{
+        width: 50%;
+    }
+    .counter-item .text{
+        font-size: 18px;
+        white-space: unset;
+    }
+    .num-holder .num{
+        font-size: 38px;
+    }
+    .num-holder {
+        font-size: 38px;
+        line-height: normal;
+        margin-bottom: 15px;
+    }
+    .numbers{
+        padding-top: 70px;
+        padding-bottom: 60px;
+    }
+}

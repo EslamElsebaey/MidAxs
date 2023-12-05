@@ -1,0 +1,22 @@
+@font-face {
+    font-family: 'FONTSPRING DEMO - Compita';
+    src: url('FONTSPRINGDEMO-CompitaRegular.woff2') format('woff2'),
+        url('FONTSPRINGDEMO-CompitaRegular.woff') format('woff'),
+        url('FONTSPRINGDEMO-CompitaRegular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+
+@font-face {
+    font-family: 'HelveticaNeueW23forSKY-Reg';
+    src: url('HelveticaNeueW23forSKY-Reg_1.woff2') format('woff2'),
+        url('HelveticaNeueW23forSKY-Reg_1.woff') format('woff'),
+        url('HelveticaNeueW23forSKY-Reg_1.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+

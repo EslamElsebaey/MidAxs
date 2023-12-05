@@ -1,0 +1,81 @@
+.about-item{
+    .who-text{
+        font-size: 20px;
+        line-height: 36px;
+        color: #0b41cd;
+        display: inline-block;
+        margin-bottom: 20px;
+    }
+    .title{
+        font-size: 48px;
+        line-height: 36px;
+        color: #052066;
+        margin-bottom: 35px;
+        
+    }
+    .desc{
+        width: 516px;
+        font-size: 20px;
+        line-height: 32px;
+        color: #052066;
+        margin-bottom: 45px;
+    }
+    .readmore{
+        padding: 13.2px 35.5px;
+        text-align: center;
+        min-width: 170px;
+        &:hover{
+            background-color: #052066;
+            color: #fff;
+        }
+    }
+   
+}
+
+
+
+@include max-1200{
+    .about-item .desc{
+        width: 100%;
+    }
+    
+    .general-flex-content{
+        column-gap: 30px;
+    }
+}
+
+
+@include max-992 {
+    .about-item .readmore{
+        min-width: unset;
+    }
+    .about-item{
+        text-align: center;
+    }
+}
+
+@include max-768 {
+    .about-item .desc{
+        width: 100%;
+        text-align: center;
+        // text-align: justify;
+        // text-align-last: center;
+        margin-bottom: 30px;
+        font-size: 18px;
+        line-height: 1.6;
+    }
+    .about-item{
+        text-align: center;
+    }
+    .about-item .title{
+        font-size: 30px;
+        margin-bottom: 20px;
+    }
+    .about-item .readmore{
+        padding: 11px 30px;
+    }
+    .about-item .who-text{
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+}
