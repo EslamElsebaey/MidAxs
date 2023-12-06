@@ -1,7 +1,9 @@
 
-// $(window).load(function(){
-//   $(".preloader").fadeOut();
-// })
+$(window).on( "load" ,function(){
+  $(".video-sec").addClass("show-videoSec");
+})
+
+
 
 
 

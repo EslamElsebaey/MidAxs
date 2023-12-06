@@ -24,10 +24,16 @@ body{
     .bottom-header-content{
         margin-top: 0;
     }
+    .sub-nav > li{
+        padding: 10px 0;
+    }
     .logo img {
         height: 50px;
     }
-    padding-top: 15px;
+    .li-drop:hover .dropdown{
+        transform: translateY(0px);
+    }
+    padding-top: 10px;
     position: fixed ;
     // top: 0;
     // left: 0;
