@@ -9,6 +9,12 @@ header{
     width: 100%;
     z-index: 15;
 }
+
+.es-container{
+    max-width: 1340px;
+    margin-left: auto;
+    margin-right: auto;
+}
 body{
     padding-top: 203px;
 }
@@ -30,9 +36,12 @@ body{
     .logo img {
         height: 50px;
     }
-    .li-drop:hover .dropdown{
+    .bottom-header-content{
+        .li-drop:hover .dropdown{
         transform: translateY(0px);
+        }
     }
+    
     padding-top: 10px;
     position: fixed ;
     // top: 0;
@@ -105,7 +114,6 @@ body{
     }
     .searchBtn {
         margin-inline-start: 35px;
-       
     }
 }
 // .lang{
@@ -146,6 +154,11 @@ body{
     }
 }
 
+.lang{
+    display: block;
+    cursor: pointer;
+}
+
 .li-drop{
     position: relative;
     &:hover{
@@ -172,7 +185,6 @@ body{
         flex-direction: column;
         align-items: flex-start;
         li {
-           
             width: 100%;
             &:hover{
                 background-color: #f2f2f2;
@@ -191,7 +203,40 @@ body{
     }
 }
 
+.arabic{
+    font-family: "sky";
+}
+.english{
+    font-family: "fontspring";
+}
 
+.lang-drop {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    .dropdown{
+        opacity: 0;
+        visibility: hidden;
+        width: 135px;
+        inset-inline-start: unset;
+        left: 50%;
+        transform: translateY(8rem) translateX(-50%);
+        padding: 8px;
+        li{
+            text-align: center;
+            a{
+                padding: 7px;
+                font-size: 17px;
+            }
+        }
+    }
+    &:hover{
+        .dropdown{
+            transform:  translateX(-50%) translateY(4.3rem);
+        }
+    }
+}
 
 
 // Search overlay
@@ -326,6 +371,13 @@ body{
 
 
 @include max-992 {
+   
+    .lang-drop{
+        height: auto;
+    }
+    .icons-holder .lang-drop{
+        display: none;
+    }
     .sub-nav > li:hover .navLink{
         color: #052066;
     }
@@ -368,7 +420,7 @@ body{
     .sub-nav > li{
         padding: 0;
     }
-    .lang .icon{
+    .nav-closeLang-holder .icon,  .lang .icon{
         font-size: 25px;
         color: #052066;
     }
@@ -425,7 +477,7 @@ body{
         z-index: 10;
         flex-direction: column;
     }
-    .li-drop{
+    .main-nav .li-drop{
         .navLink{
             display: flex;
             align-items: center;
@@ -477,13 +529,49 @@ body{
         }
     }
 
-    
-
     .closeSearch-btn .icon{
         font-size: 25px;
     }
+
+
+    .lang-drop{
+        .dropdown{
+            width: 115px;
+            padding: 7px;
+            // opacity: 1;
+            top: calc(100% + 12px);
+            // visibility: visible;
+            inset-inline-start: 0;
+            transform: translateY(0);
+         
+            li{
+                border: none;
+                padding: 7px 0;
+                padding-inline-start: unset;
+                &:hover{
+                    background-color: #f2f2f2;
+                    a{
+                        color: #0b41cd;
+                    }
+                }
+                a{
+                    color: #052066;
+                    font-size: 16px;
+                }
+            }
+        }
+        &:hover .dropdown{
+            transform: translateY(0);
+        }
+      
+    } 
+  
+
+
+
+    }
    
-}
+
   
 .show-sideBar{
     transform: translateY(0);
@@ -499,7 +587,7 @@ body{
     header{
         padding: 15px 20px;
     }
-    .lang .icon , .closeNavBtn .icon {
+    .nav-closeLang-holder .icon , .closeNavBtn .icon {
         font-size: 23px;
     }
     .search-input-holder{

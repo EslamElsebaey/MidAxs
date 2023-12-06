@@ -196,6 +196,13 @@ html[dir="rtl"]{
     }
 }
 
+@include min-992 {
+    .logo-info-mob{
+       display: none;
+    }
+}
+
+
 @include max-1200{
     .footer-items{
         flex-wrap: wrap;
@@ -205,22 +212,32 @@ html[dir="rtl"]{
 
 
 @include max-992 {
+   
+   
     .logo-info{
         display: flex;
         justify-content: center;
+    }
+    .logo-info{
+        display: none;
     }
     .footer-social{
         justify-content: center;
     }
     .footer-items{
         flex-direction: column;
+       
+        .footer-item{
+            border-bottom: 1px solid #052066;
+            width: 100%;
+            padding-bottom: 18px;
+            margin-bottom: 25px;
+        }
         .img-item{
             order: 4;
-            margin-top: 30px;
-        }
-        .footer-item{
-            width: 100%;
-            margin-bottom: 25px;
+            margin-top: 20px;
+            border-bottom: none;
+            padding-bottom: 0;
         }
     }
    
@@ -228,7 +245,7 @@ html[dir="rtl"]{
     
      .links {
         padding-top: 10px;
-        padding-bottom: 5px;
+        padding-bottom: 0;
     }
     html[dir="rtl"]{
         .links{
@@ -251,28 +268,45 @@ html[dir="rtl"]{
        align-items: center;
        justify-content: space-between;
         &::after {
-            content: "\f078";
+            content: "\f077";
             font-family: "Font Awesome 6 Free";
             font-weight: 900;
             position: relative;
             color: #052066;
             font-size: 15px;
             transition: transform ease-in-out 0.2s;
+            transform: rotate(90deg);
         }
+    }
+    html[dir="rtl"]{
+        footer .footer-title::after{
+            transform: rotate(-90deg);
+        }
+    }
+   
+
+    .logo-info-mob{
+        width: 100%;
+        display: flex;
+        margin-bottom: 35px;
     }
     .links , .nested{
         display: none;
     }
-    .arrow-rotate::after {
+    footer .arrow-rotate::after {
         transform:  rotate(180deg) ;
     }
-    .contact-data{
-        margin-left: auto;
-        margin-right: auto;
-        width: max-content;
+    html[dir="rtl"]{
+        footer .arrow-rotate::after {
+            transform:  rotate(-180deg) ;
+        }
     }
     .links li a{
         line-height: 35px;
+    }
+    .contact-data{
+        margin: 0;
+        margin-bottom: 35px;
     }
 }
 
@@ -295,12 +329,12 @@ html[dir="rtl"]{
     }
     
     footer{
-        padding-top: 45px;
+        padding-top: 40px;
         padding-bottom: 30px;
     }
    
     .copyright{
-        margin-top: 45px;
+        margin-top: 30px;
     }
     .tasawk-text{
         justify-content: center;
@@ -311,11 +345,11 @@ html[dir="rtl"]{
         width: 100%;
         margin-bottom: 5px;
     }
-    .logo-info{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
+    // .logo-info{
+    //     display: flex;
+    //     justify-content: center;
+    //     align-items: center;
+    // }
     .copyright .copyright-content{
         justify-content: center;
     }
