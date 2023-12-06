@@ -168,7 +168,7 @@ footer{
     }
 }
 
-html[dir="ltr"]{
+html[dir="rtl"]{
     .contact-data li .icon.fa-phone{
         transform: scaleX(-1);
     }

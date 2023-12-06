@@ -756,7 +756,7 @@ footer .footer-title {
   margin-bottom: 0;
 }
 
-html[dir=ltr] .contact-data li .icon.fa-phone {
+html[dir=rtl] .contact-data li .icon.fa-phone {
   transform: scaleX(-1);
 }
 
