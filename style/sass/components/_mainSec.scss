@@ -14,18 +14,25 @@
    margin: 0;
 }
 .vid-holder{
-    // width: 90%;
-    iframe{
+    video{
         display: block;
         width: 100%;
-        height: 100%;
     }
+    // width: 90%;
+    // iframe{
+    //     display: block;
+    //     width: 100%;
+    //     height: 100%;
+    // }
 }
 .video-sec{
     opacity: 0;
     visibility: hidden;
-    transition-delay: 500ms;
-    transition: all ease-in-out .3s;
+    transition-delay: 1200ms;
+    transition-duration: .3s;
+    transition-timing-function: ease-in-out;
+    transition-property: all;
+    // transition: all ease-in-out .3s;
 }
 .show-videoSec{
     opacity: 1;
