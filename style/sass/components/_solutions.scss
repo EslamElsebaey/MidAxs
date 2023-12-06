@@ -62,6 +62,10 @@
         font-size: 24px;
         color: #052066;
         margin: 0;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        -webkit-line-clamp: 1;
     }
     .desc{
         position: absolute;
