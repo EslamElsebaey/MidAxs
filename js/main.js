@@ -42,16 +42,22 @@ $(document).ready(function(){
   
   // show and hide search box
 
-$(".searchBtn").click(function(){
-  $(".search-overlay").addClass("show-searchBox");
-  $("body").addClass("overflow-hidden") ;
-})
 
-$(".closeSearch-btn").click(function(event){
-  event.stopPropagation();
-  $(".search-overlay").removeClass("show-searchBox");
-  $("body").removeClass("overflow-hidden") ;
-})
+ 
+
+    $(".searchBtn").click(function(){
+      $(".search-holder").slideToggle();
+      $(".sub-nav > li").toggleClass("paddingTop-0")
+    })
+  
+    $(".closeSearh-btn").click(function(){
+      $(".search-holder").slideUp();
+      $(".sub-nav > li").removeClass("paddingTop-0")
+
+    })
+  
+
+
 
 
 // **************************************************************************************************
