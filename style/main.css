@@ -33,14 +33,6 @@ section {
   overflow: hidden;
 }
 
-a {
-  text-decoration: none;
-  display: inline-block;
-}
-a:focus, a:hover {
-  text-decoration: none;
-}
-
 .item-parent {
   position: relative;
 }
@@ -92,8 +84,6 @@ img {
   background-color: #dbe5ff;
 }
 
-/*preloader*/
-/*preloader*/
 .toTop {
   width: 40px;
   height: 40px;
@@ -258,6 +248,7 @@ body {
 }
 .search-lang .searchBtn {
   margin-inline-start: 35px;
+  width: 22px;
 }
 
 .bottom-header-content .navLink {
@@ -471,9 +462,6 @@ body {
 }
 
 @media only screen and (min-width: 992px) {
-  .sub-nav > li.paddingTop-0 {
-    padding-top: 0;
-  }
   .bars {
     display: none;
   }
@@ -671,6 +659,9 @@ body {
 }
 
 @media only screen and (max-width: 767px) {
+  .search-lang .searchBtn {
+    width: unset;
+  }
   .fixed .search-holder {
     top: calc(100% + 10px);
     margin-top: 0;

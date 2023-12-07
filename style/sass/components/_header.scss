@@ -1,6 +1,5 @@
 header{
     padding: 45px 30px 0;
-    // max-width: 1340px;
     margin-left: auto;
     margin-right: auto;
     position: absolute;
@@ -32,11 +31,7 @@ body{
     -webkit-backdrop-filter:  blur(16px);
     backdrop-filter:  blur(16px);
     background-color: rgba(255, 255, 255, 0.9);
-    // box-shadow: 0px 0px 4px rgba(14, 19, 24, .07) !important;
     box-shadow: 0px 0px 4px rgba(14, 19, 24, .07);
-    // .bottom-header-content{
-    //     margin-top: 0;
-    // }
     .sub-nav > li{
        padding-bottom: 10px;
     }
@@ -54,8 +49,6 @@ body{
     
     padding-top: 10px;
     position: fixed ;
-    // top: 0;
-    // left: 0;
     z-index: 20;
     transition: all linear .5s;
 }
@@ -123,11 +116,11 @@ body{
     }
     .searchBtn {
         margin-inline-start: 35px;
+        width: 22px;
     }
 }
 
 .bottom-header-content{
-    // margin-top: 10px;
     .navLink{
         font-size: 20px;
         border: 4px solid transparent;
@@ -147,7 +140,6 @@ body{
     > li {
         margin-inline-end: 50px;
         padding: 20px 0;
-        // padding-bottom: 50px;
         position: relative;
         &:hover{
             .navLink{
@@ -257,7 +249,6 @@ body{
     top: 100%;
     left: 0;
     width: 100%;
-    // margin-top: 7px;
     opacity: 0;
     visibility: hidden;
     height: 60px;
@@ -266,7 +257,6 @@ body{
     transform: translateY(25px);
     justify-content: center;
     align-items: flex-start;
-    // z-index: 5;
 }
 
 
@@ -276,7 +266,6 @@ body{
     border-radius: 0;
     padding-inline-start: 30px;
     padding-inline-end: 65px;
-    // padding: 0 65px 0 30px;
     display: flex;
     align-items: center;
     position: relative;
@@ -369,9 +358,6 @@ body{
 
 
   @include min-992 {
-    .sub-nav > li.paddingTop-0{
-        padding-top: 0;
-    }
     .bars{
         display: none;
     }
@@ -553,9 +539,7 @@ body{
         .dropdown{
             width: 115px;
             padding: 7px;
-            // opacity: 1;
             top: calc(100% + 12px);
-            // visibility: visible;
             inset-inline-start: 0;
             transform: translateY(0);
          
@@ -596,6 +580,9 @@ body{
 
 
 @include max-768 {
+    .search-lang .searchBtn{
+        width: unset;
+    }
     .fixed .search-holder{
         top: calc(100% + 10px);
         margin-top: 0;

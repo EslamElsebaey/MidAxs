@@ -4,10 +4,6 @@ $(window).on( "load" ,function(){
 })
 
 
-
-
-
-
 $(document).ready(function(){
 
 
@@ -42,18 +38,10 @@ $(document).ready(function(){
   
   // show and hide search box
 
-
- 
-
     $(".searchBtn").click(function(){
       $(this).children(".icon").toggleClass("fa-xmark")
       $(".search-holder").toggleClass("show-searchBox");
-      // $(".sub-nav > li").toggleClass("paddingTop-0")
     })
-  
-   
-
-
 
 
 // **************************************************************************************************
@@ -79,8 +67,7 @@ $(document).ready(function(){
       vidHolder.style.width = newWidth + "%";
     });
   
-  }
-  
+}
 
 
 
@@ -127,13 +114,6 @@ $(document).ready(function(){
     });
   }
 
-
-
-// **************************************************************************************************
-
-
-
-
 // **************************************************************************************************
 
 // to top button
@@ -156,8 +136,6 @@ $(".toTop").click(function(){
 
 //fixed nav
 
-
-
   let fixedBar = document.querySelector("header"),
   prevScrollposition = $(window).scrollTop();
   $(window).on("scroll", function () {
@@ -169,7 +147,7 @@ $(".toTop").click(function(){
 
      var scrollTop = $(window).scrollTop();
      prevScrollposition < scrollTop && prevScrollposition > 0 ? fixedBar.classList.add("stayTop") : fixedBar.classList.remove("stayTop"), (prevScrollposition = scrollTop);
-   });
+});
 
   
 
@@ -188,14 +166,12 @@ if($(window).width() < 992){
     $(".footer-title").not($(this)).removeClass("arrow-rotate");
   })
   }
-  
+
+// **************************************************************************************************
 
 
-
-
-
-
-})
+  // end of document ready
+}) 
 
 
 
