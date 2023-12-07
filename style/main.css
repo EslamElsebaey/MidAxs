@@ -178,11 +178,13 @@ body {
 }
 
 .fixed {
+  -webkit-backdrop-filter: blur(16px);
+  backdrop-filter: blur(16px);
+  background-color: rgba(255, 255, 255, 0.9);
+  box-shadow: 0px 0px 4px rgba(14, 19, 24, 0.07);
   padding-top: 10px;
   position: fixed;
-  background-color: #fff;
   z-index: 20;
-  border-bottom: 1px solid #dbd6d1;
   transition: all linear 0.5s;
 }
 .fixed .bottom-header-content {
@@ -260,9 +262,6 @@ body {
   margin-inline-start: 35px;
 }
 
-.bottom-header-content {
-  margin-top: 10px;
-}
 .bottom-header-content .navLink {
   font-size: 20px;
   border: 4px solid transparent;
@@ -278,7 +277,8 @@ body {
 }
 .sub-nav > li {
   margin-inline-end: 50px;
-  padding: 20px 0;
+  padding-top: 5px;
+  padding-bottom: 20px;
   position: relative;
 }
 .sub-nav > li:hover .navLink {
@@ -370,14 +370,16 @@ body {
 }
 
 .search-holder {
-  z-index: 2;
-  margin-top: 15px;
-  display: none;
+  transition: all linear 0.2s;
+  margin-top: 7px;
+  opacity: 0;
+  visibility: hidden;
   top: 100%;
   width: 100%;
-  height: 70px;
+  height: 60px;
   padding: 0;
-  background-color: #ececec;
+  background-color: #EEF1FC;
+  transform: translateY(25px);
   justify-content: center;
   align-items: flex-start;
 }
@@ -424,7 +426,7 @@ body {
 
 .searchButton i {
   font-size: 22px;
-  color: #999999;
+  color: #d8dcec;
 }
 
 .searchButton {
@@ -432,17 +434,6 @@ body {
   top: 50%;
   transform: translateY(-50%);
   inset-inline-start: 20px;
-}
-
-.closeSearh-btn {
-  position: absolute;
-  top: 50%;
-  inset-inline-end: 20px;
-  transform: translateY(-50%);
-}
-.closeSearh-btn .icon {
-  font-size: 25px;
-  color: #999999;
 }
 
 .nav-icons-holder {
@@ -491,8 +482,7 @@ body {
 }
 @media only screen and (max-width: 991px) {
   .search-holder {
-    height: 55px;
-    margin-top: 10px;
+    height: 50px;
   }
   .lang-drop {
     height: auto;
@@ -676,17 +666,11 @@ body {
 }
 
 @media only screen and (max-width: 767px) {
-  .closeSearh-btn .icon {
-    font-size: 22px;
-  }
   .searchButton i {
     font-size: 18px;
   }
   .search-holder-input {
     padding: 0 20px;
-  }
-  .closeSearh-btn {
-    inset-inline-end: 20px;
   }
   .search-holder-input input {
     padding: 0 25px;
@@ -695,7 +679,7 @@ body {
     padding: 10px 20px;
   }
   body {
-    padding-top: 120.43px;
+    padding-top: 112.43px;
   }
   header {
     padding: 15px 20px 0;

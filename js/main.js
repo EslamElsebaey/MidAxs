@@ -46,16 +46,12 @@ $(document).ready(function(){
  
 
     $(".searchBtn").click(function(){
-      $(".search-holder").slideToggle();
-      $(".sub-nav > li").toggleClass("paddingTop-0")
+      $(this).children(".icon").toggleClass("fa-xmark")
+      $(".search-holder").toggleClass("show-searchBox");
+      // $(".sub-nav > li").toggleClass("paddingTop-0")
     })
   
-    $(".closeSearh-btn").click(function(){
-      $(".search-holder").slideUp();
-      $(".sub-nav > li").removeClass("paddingTop-0")
-
-    })
-  
+   
 
 
 
