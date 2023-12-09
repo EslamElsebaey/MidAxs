@@ -14,6 +14,15 @@ html[dir="rtl"]{
   }
 }
 
+a{
+  text-decoration: none;
+  display: inline-block;
+  &:focus , &:hover{
+    text-decoration: none;
+  }
+}
+
+
 section{
   max-width: 100%;
   overflow: hidden;
