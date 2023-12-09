@@ -419,7 +419,7 @@ body {
   color: #999999;
 }
 
-.searchButton i {
+.searchButton .icon {
   font-size: 22px;
   color: #d8dcec;
 }
@@ -666,7 +666,7 @@ body {
     top: calc(100% + 10px);
     margin-top: 0;
   }
-  .searchButton i {
+  .searchButton .icon {
     font-size: 18px;
   }
   .search-holder-input {
@@ -897,7 +897,7 @@ html[dir=rtl] .contact-data li .icon.fa-phone {
     flex-direction: column;
   }
   .footer-items .footer-item {
-    border-bottom: 1px solid #052066;
+    border-bottom: 1px solid rgba(5, 32, 102, 0.1411764706);
     width: 100%;
     padding-bottom: 18px;
     margin-bottom: 25px;
@@ -963,7 +963,7 @@ html[dir=rtl] .contact-data li .icon.fa-phone {
   }
   .contact-data {
     margin: 0;
-    margin-bottom: 35px;
+    margin-bottom: 50px;
   }
 }
 @media only screen and (max-width: 767px) {
@@ -986,7 +986,7 @@ html[dir=rtl] .contact-data li .icon.fa-phone {
     padding-bottom: 30px;
   }
   .copyright {
-    margin-top: 30px;
+    margin-top: 10px;
   }
   .tasawk-text {
     justify-content: center;
@@ -1135,7 +1135,7 @@ body {
     font-size: 25px;
   }
   .vision, .mision {
-    padding-top: 50px;
+    padding-top: 80px;
   }
   .about {
     padding-top: 60px;
@@ -1295,8 +1295,8 @@ body {
     margin-bottom: 15px;
   }
   .numbers {
-    padding-top: 70px;
-    padding-bottom: 60px;
+    padding-top: 80px;
+    padding-bottom: 80px;
   }
 }
 .solutions {
@@ -1502,10 +1502,10 @@ body {
   }
   .join-content {
     flex-direction: column;
-    padding: 30px 15px;
+    padding: 80px 15px;
     height: unset;
     min-height: 200px;
-    background-position: 45% 71%;
+    background-position: 76% 70%;
   }
   .join-content .text {
     text-align: center;

@@ -296,7 +296,7 @@ body{
 
 
 .searchButton{
-    i{
+    .icon{
     font-size: 22px;
     color: #d8dcec;
     }
@@ -588,7 +588,7 @@ body{
         margin-top: 0;
     }
    
-    .searchButton i{
+    .searchButton .icon{
         font-size: 18px;
     }
     .search-holder-input{
