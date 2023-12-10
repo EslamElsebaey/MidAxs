@@ -1,7 +1,7 @@
 @font-face {
-  font-family: "fontspring";
-  src: url("../fonts/site-fonts/FONTSPRINGDEMO-CompitaRegular.woff2") format("woff2"), url("../fonts/site-fonts/FONTSPRINGDEMO-CompitaRegular.woff") format("woff"), url("../fonts/site-fonts/FONTSPRINGDEMO-CompitaRegular.ttf") format("truetype");
-  font-weight: 400;
+  font-family: "Noto Sans JP";
+  src: url("../fonts/site-fonts/NotoSansJP-Thin.woff2") format("woff2"), url("../fonts/site-fonts/NotoSansJP-Thin.woff") format("woff"), url("../fonts/site-fonts/NotoSansJP-Thin.ttf") format("truetype");
+  font-weight: 100;
   font-style: normal;
   font-display: swap;
 }
@@ -21,7 +21,7 @@
 body {
   font-weight: 400;
   font-style: normal;
-  font-family: "fontspring";
+  font-family: "Noto Sans JP";
 }
 
 html[dir=rtl] body {
@@ -340,7 +340,7 @@ body {
 }
 
 .english {
-  font-family: "fontspring";
+  font-family: "Noto Sans JP";
 }
 
 .lang-drop {
@@ -1198,7 +1198,7 @@ body {
 }
 .about-item .title {
   font-size: 48px;
-  line-height: 36px;
+  line-height: normal;
   color: #052066;
   margin-bottom: 35px;
 }
