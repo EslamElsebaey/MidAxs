@@ -1,7 +1,14 @@
 @font-face {
-  font-family: "Noto Sans JP";
-  src: url("../fonts/site-fonts/NotoSansJP-Thin.woff2") format("woff2"), url("../fonts/site-fonts/NotoSansJP-Thin.woff") format("woff"), url("../fonts/site-fonts/NotoSansJP-Thin.ttf") format("truetype");
-  font-weight: 100;
+  font-family: "Noto Sans Condensed";
+  src: url("../fonts/site-fonts/NotoSansCondensed-Regular.woff2") format("woff2"), url("../fonts/site-fonts/NotoSansCondensed-Regular.woff") format("woff"), url("../fonts/site-fonts/NotoSansCondensed-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Noto Sans Condensed";
+  src: url("../fonts/site-fonts/NotoSansCondensed-Light.woff2") format("woff2"), url("../fonts/site-fonts/NotoSansCondensed-Light.woff") format("woff"), url("../fonts/site-fonts/NotoSansCondensed-Light.ttf") format("truetype");
+  font-weight: 300;
   font-style: normal;
   font-display: swap;
 }
@@ -21,7 +28,7 @@
 body {
   font-weight: 400;
   font-style: normal;
-  font-family: "Noto Sans JP";
+  font-family: "Noto Sans Condensed";
 }
 
 html[dir=rtl] body {
@@ -1036,18 +1043,17 @@ html[dir=rtl] .contact-data li .icon.fa-phone {
 .MisVis-heading {
   display: flex;
   align-items: center;
-  margin-bottom: 30px;
+  margin-bottom: 22px;
 }
 .MisVis-heading .title {
   font-size: 48px;
-  line-height: 36px;
+  line-height: normal;
   color: #052066;
   text-transform: capitalize;
   margin: 0;
 }
 .MisVis-heading .icon {
   font-size: 30px;
-  line-height: 0px;
   color: #0b41cd;
   margin-inline-end: 20px;
 }
@@ -1200,7 +1206,7 @@ body {
   font-size: 48px;
   line-height: normal;
   color: #052066;
-  margin-bottom: 35px;
+  margin-bottom: 25px;
 }
 .about-item .desc {
   width: 516px;

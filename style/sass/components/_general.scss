@@ -22,17 +22,17 @@ margin: 0;
 .MisVis-heading{
     display: flex;
     align-items: center;
-    margin-bottom: 30px;
+    margin-bottom: 22px;
     .title{
         font-size: 48px;
-        line-height: 36px;
+        line-height: normal;
         color: #052066;
         text-transform: capitalize;
         margin: 0;
     }
     .icon{
         font-size: 30px;
-        line-height: 0px;
+        // line-height: 0px;
         color: #0b41cd;
         margin-inline-end: 20px;
     }
