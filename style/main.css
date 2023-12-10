@@ -1,14 +1,14 @@
 @font-face {
-  font-family: "Noto Sans Condensed";
-  src: url("../fonts/site-fonts/NotoSansCondensed-Regular.woff2") format("woff2"), url("../fonts/site-fonts/NotoSansCondensed-Regular.woff") format("woff"), url("../fonts/site-fonts/NotoSansCondensed-Regular.ttf") format("truetype");
-  font-weight: 400;
+  font-family: "Noto Sans";
+  src: url("../fonts/site-fonts/NotoSans-Light.woff2") format("woff2"), url("../fonts/site-fonts/NotoSans-Light.woff") format("woff"), url("../fonts/site-fonts/NotoSans-Light.ttf") format("truetype");
+  font-weight: 300;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
-  font-family: "Noto Sans Condensed";
-  src: url("../fonts/site-fonts/NotoSansCondensed-Light.woff2") format("woff2"), url("../fonts/site-fonts/NotoSansCondensed-Light.woff") format("woff"), url("../fonts/site-fonts/NotoSansCondensed-Light.ttf") format("truetype");
-  font-weight: 300;
+  font-family: "Noto Sans";
+  src: url("../fonts/site-fonts/NotoSans-Regular.woff2") format("woff2"), url("../fonts/site-fonts/NotoSans-Regular.woff") format("woff"), url("../fonts/site-fonts/NotoSans-Regular.ttf") format("truetype");
+  font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
@@ -26,9 +26,9 @@
 }
 
 body {
-  font-weight: 400;
+  font-weight: 300;
   font-style: normal;
-  font-family: "Noto Sans Condensed";
+  font-family: "Noto Sans";
 }
 
 html[dir=rtl] body {
@@ -70,6 +70,7 @@ img {
   color: black;
   text-decoration: none;
   display: inline-block;
+  font-weight: 300;
   padding: 0;
   outline: none;
   border: none;
@@ -753,7 +754,6 @@ footer .footer-title {
   font-size: 16px;
   line-height: 30px;
   color: #052066;
-  font-weight: 500;
   transition: all ease-in-out 0.2s;
 }
 .links li a:hover {
@@ -772,7 +772,6 @@ footer .footer-title {
 .copyright .right-reserved {
   color: #052066;
   font-size: 16px;
-  font-weight: 400;
   margin: 0;
 }
 
@@ -829,7 +828,6 @@ footer .footer-title {
   color: #0b41cd;
   padding-inline-start: 20px;
   font-size: 16px;
-  font-weight: 400;
   transition: all ease-in-out 0.2s;
   padding-inline-end: 100px;
 }
@@ -1488,7 +1486,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 60px 75px;
+  padding: 60px 60px;
   height: 200px;
   background-image: url(../images/join/01.png), linear-gradient(90deg, rgba(0, 0, 0, 0.1) 0%, rgb(11, 65, 205) 50%);
   background-repeat: no-repeat;
@@ -1603,4 +1601,10 @@ body {
     padding: 45px 20px 0;
     margin-bottom: 40px;
   }
+}
+html[dir=ltr] h1, html[dir=ltr] h2, html[dir=ltr] h3, html[dir=ltr] h4, html[dir=ltr] h5, html[dir=ltr] h6, html[dir=ltr] .message input::-webkit-input-placeholder {
+  font-weight: 300;
+}
+html[dir=ltr] .MisVis-heading .title, html[dir=ltr] .solutions .solu-title, html[dir=ltr] .about-item .title, html[dir=ltr] .nums-content .title, html[dir=ltr] .join-content .text {
+  font-weight: 400;
 }/*# sourceMappingURL=main.css.map */
