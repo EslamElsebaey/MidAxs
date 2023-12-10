@@ -1614,4 +1614,7 @@ html[dir=ltr] .links li a {
 }
 html[dir=ltr] footer .footer-title {
   font-size: 18px;
+}
+html[dir=ltr] .main-title {
+  font-weight: 300;
 }/*# sourceMappingURL=main.css.map */

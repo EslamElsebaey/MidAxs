@@ -1,5 +1,4 @@
 html[dir="ltr"]{
-   
     .MisVis-heading .title , .solutions .solu-title , .about-item .title , .nums-content .title , .join-content .text{
         font-weight: 400;
     }
@@ -12,6 +11,9 @@ html[dir="ltr"]{
     }
     footer .footer-title{
         font-size: 18px;
+    }
+    .main-title{
+        font-weight: 300;
     }
   
 }
