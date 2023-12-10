@@ -11,29 +11,15 @@
     background-image: url(../images/join/01.png) , linear-gradient(90deg, rgba(0,0,0,0.1) 0%, rgba(11,65,205,1) 50%);
     background-repeat: no-repeat;
     background-position:  0 73%;
-
-    .join-btn{
-        padding: 15.5px 37px;
-    }
     .text{
         font-size: 40px;
         color: #ffffff;
         margin: 0;
     }
-    .join-btn{
-        min-width: 180px;
-        text-align: center;
-        white-space: nowrap;
-        font-size: 18px;
-        text-transform: uppercase;
-        color: #ffffff;
-        border: 1px solid #ffffff;
-        &:hover{
-            background-color: #ffffff;
-            color:#0b41cd ;
-        }
-    }
+   
 }
+
+
 
 
 @include max-992 {
@@ -42,11 +28,6 @@
     }
     .join-content{
         padding: 35px;
-    }
-    .join-content .join-btn{
-        padding: 12px 30px;
-        font-size: 16px;
-        min-width: unset;
     }
 }
 

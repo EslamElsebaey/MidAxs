@@ -65,7 +65,28 @@ margin: 0;
     font-size: 18px;
     color: #0b41cd;
     text-transform: uppercase;
+    padding: 13.2px 35.5px;
+    text-align: center;
+    min-width: 170px;
+    white-space: nowrap;
+    &:hover{
+        background-color: #0b41cd;
+        color: #fff;
+    }
 }
+.general-btn-outline{
+    padding: 15.5px 37px;
+    min-width: 180px;
+    color: #ffffff;
+    border: 1px solid #ffffff;
+    &:hover{
+        background-color: #ffffff;
+        color:#0b41cd ;
+    }
+}
+
+
+
 .radial-gradient{
     position: absolute;
     width: 1187px;
@@ -91,6 +112,15 @@ body{
 
 
 @include max-992 {
+    .general-btn{
+        min-width: unset;
+    }
+    .general-btn-outline{
+        padding: 12px 30px;
+        font-size: 16px;
+        min-width: unset;
+    }
+
     .MisVis-heading{
         justify-content: center;
     }
@@ -107,6 +137,12 @@ body{
 }
 
 @include max-768 {
+    .general-btn{
+        padding: 11px 30px;
+    }
+    .general-btn-outline {
+        padding: 12px 30px;
+    }
     .radial-gradient{
         background-image : radial-gradient(circle at center, #e1e7f9 0%, #ffffff 70%);
         width: 100%;

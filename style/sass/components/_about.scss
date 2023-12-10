@@ -20,16 +20,6 @@
         color: #052066;
         margin-bottom: 45px;
     }
-    .readmore{
-        padding: 13.2px 35.5px;
-        text-align: center;
-        min-width: 170px;
-        &:hover{
-            background-color: #0b41cd;
-            color: #fff;
-        }
-    }
-   
 }
 
 
@@ -46,9 +36,7 @@
 
 
 @include max-992 {
-    .about-item .readmore{
-        min-width: unset;
-    }
+    
     .about-item{
         text-align: center;
     }
@@ -72,9 +60,7 @@
         font-size: 30px;
         margin-bottom: 20px;
     }
-    .about-item .readmore{
-        padding: 11px 30px;
-    }
+   
     .about-item .who-text{
         font-size: 18px;
         margin-bottom: 10px;

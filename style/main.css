@@ -1080,6 +1080,25 @@ html[dir=rtl] .contact-data li .icon.fa-phone {
   font-size: 18px;
   color: #0b41cd;
   text-transform: uppercase;
+  padding: 13.2px 35.5px;
+  text-align: center;
+  min-width: 170px;
+  white-space: nowrap;
+}
+.general-btn:hover {
+  background-color: #0b41cd;
+  color: #fff;
+}
+
+.general-btn-outline {
+  padding: 15.5px 37px;
+  min-width: 180px;
+  color: #ffffff;
+  border: 1px solid #ffffff;
+}
+.general-btn-outline:hover {
+  background-color: #ffffff;
+  color: #0b41cd;
 }
 
 .radial-gradient {
@@ -1104,6 +1123,14 @@ body {
   }
 }
 @media only screen and (max-width: 991px) {
+  .general-btn {
+    min-width: unset;
+  }
+  .general-btn-outline {
+    padding: 12px 30px;
+    font-size: 16px;
+    min-width: unset;
+  }
   .MisVis-heading {
     justify-content: center;
   }
@@ -1119,6 +1146,12 @@ body {
   }
 }
 @media only screen and (max-width: 767px) {
+  .general-btn {
+    padding: 11px 30px;
+  }
+  .general-btn-outline {
+    padding: 12px 30px;
+  }
   .radial-gradient {
     background-image: radial-gradient(circle at center, #e1e7f9 0%, #ffffff 70%);
     width: 100%;
@@ -1176,15 +1209,6 @@ body {
   color: #052066;
   margin-bottom: 45px;
 }
-.about-item .readmore {
-  padding: 13.2px 35.5px;
-  text-align: center;
-  min-width: 170px;
-}
-.about-item .readmore:hover {
-  background-color: #0b41cd;
-  color: #fff;
-}
 
 @media only screen and (max-width: 1199px) {
   .about-item .desc {
@@ -1196,9 +1220,6 @@ body {
   }
 }
 @media only screen and (max-width: 991px) {
-  .about-item .readmore {
-    min-width: unset;
-  }
   .about-item {
     text-align: center;
   }
@@ -1220,9 +1241,6 @@ body {
   .about-item .title {
     font-size: 30px;
     margin-bottom: 20px;
-  }
-  .about-item .readmore {
-    padding: 11px 30px;
   }
   .about-item .who-text {
     font-size: 18px;
@@ -1470,26 +1488,10 @@ body {
   background-repeat: no-repeat;
   background-position: 0 73%;
 }
-.join-content .join-btn {
-  padding: 15.5px 37px;
-}
 .join-content .text {
   font-size: 40px;
   color: #ffffff;
   margin: 0;
-}
-.join-content .join-btn {
-  min-width: 180px;
-  text-align: center;
-  white-space: nowrap;
-  font-size: 18px;
-  text-transform: uppercase;
-  color: #ffffff;
-  border: 1px solid #ffffff;
-}
-.join-content .join-btn:hover {
-  background-color: #ffffff;
-  color: #0b41cd;
 }
 
 @media only screen and (max-width: 991px) {
@@ -1498,11 +1500,6 @@ body {
   }
   .join-content {
     padding: 35px;
-  }
-  .join-content .join-btn {
-    padding: 12px 30px;
-    font-size: 16px;
-    min-width: unset;
   }
 }
 @media only screen and (max-width: 767px) {
