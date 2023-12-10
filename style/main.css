@@ -593,7 +593,7 @@ body {
   }
   .main-nav .li-drop .navLink::after {
     content: "\f078";
-    font-family: "Font Awesome 6 Free";
+    font-family: "Font Awesome 6 Pro";
     font-weight: 900;
     position: relative;
     color: #052066;
@@ -942,7 +942,7 @@ html[dir=rtl] .contact-data li .icon.fa-phone {
   }
   footer .footer-title::after {
     content: "\f077";
-    font-family: "Font Awesome 6 Free";
+    font-family: "Font Awesome 6 Pro";
     font-weight: 900;
     position: relative;
     color: #052066;
