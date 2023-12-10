@@ -1478,7 +1478,7 @@ body {
   }
 }
 .join {
-  padding-top: 50px;
+  padding-top: 110px;
   padding-bottom: 110px;
 }
 
@@ -1602,9 +1602,16 @@ body {
     margin-bottom: 40px;
   }
 }
-html[dir=ltr] h1, html[dir=ltr] h2, html[dir=ltr] h3, html[dir=ltr] h4, html[dir=ltr] h5, html[dir=ltr] h6, html[dir=ltr] .message input::-webkit-input-placeholder {
-  font-weight: 300;
-}
 html[dir=ltr] .MisVis-heading .title, html[dir=ltr] .solutions .solu-title, html[dir=ltr] .about-item .title, html[dir=ltr] .nums-content .title, html[dir=ltr] .join-content .text {
   font-weight: 400;
+}
+html[dir=ltr] h1, html[dir=ltr] h2, html[dir=ltr] h3, html[dir=ltr] h4, html[dir=ltr] h5, html[dir=ltr] h6, html[dir=ltr] .message input::-webkit-input-placeholder {
+  font-weight: 400;
+}
+html[dir=ltr] .links li a {
+  font-size: 14px;
+  line-height: 36px;
+}
+html[dir=ltr] footer .footer-title {
+  font-size: 18px;
 }/*# sourceMappingURL=main.css.map */

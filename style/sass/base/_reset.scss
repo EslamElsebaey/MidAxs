@@ -1,9 +1,18 @@
 html[dir="ltr"]{
-    h1, h2, h3, h4, h5, h6 , .message input::-webkit-input-placeholder{
-        font-weight: 300;
-    }
+   
     .MisVis-heading .title , .solutions .solu-title , .about-item .title , .nums-content .title , .join-content .text{
         font-weight: 400;
     }
+    h1, h2, h3, h4, h5, h6 , .message input::-webkit-input-placeholder{
+        font-weight: 400;
+    }
+    .links li a{
+        font-size: 14px;
+        line-height: 36px;
+    }
+    footer .footer-title{
+        font-size: 18px;
+    }
   
 }
+
